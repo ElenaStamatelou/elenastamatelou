@@ -1,0 +1,119 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elena Stamatelou</title>
+<meta name="description" content="Elena Stamatelou: PhD researcher in biomarker discovery and machine learning. Open-source tools and research projects.">
+<meta property="og:title" content="Elena Stamatelou">
+<meta property="og:description" content="Biomarker discovery and machine learning. Open-source tools and research projects.">
+<meta property="og:url" content="https://elenastamatelou.com">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%232b4a9b'/><text x='16' y='22' font-family='Arial' font-size='16' font-weight='700' fill='white' text-anchor='middle'>ES</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+<!--
+  SIMPLE VERSION (November 2026)
+  This is the first, temporary version of elenastamatelou.com.
+  It will be replaced by the final website (Learn / For researchers / Signatomics / Blog).
+  Until then, update the links below and the notice in the "coming soon" box.
+-->
+<style>
+  :root {
+    --paper: #ffffff;
+    --ink: #1d1d1f;
+    --muted: #6b6b73;
+    --rule: #e4e4ea;
+    --wash: #f4f4f7;
+    --blue: #2b4a9b;  --blue-soft: #e8edf8;
+    --rose: #b0344f;  --rose-soft: #f8e7eb;
+    --amber: #b4610d; --amber-soft: #fbeedd;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --paper: #16181b;
+      --ink: #e8e8ec;
+      --muted: #a0a0aa;
+      --rule: #2c2f34;
+      --wash: #1f2226;
+      --blue: #8ea9ef;  --blue-soft: #1b2440;
+      --rose: #ec8fa3;  --rose-soft: #3a1f27;
+      --amber: #efab5f; --amber-soft: #3a2a15;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font: 17px/1.6 "Public Sans", system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 72px 20px 48px; }
+  h1 { font-size: 2.4rem; line-height: 1.15; margin: 0 0 12px; letter-spacing: -0.01em; }
+  .lede { font-size: 1.15rem; color: var(--muted); margin: 0 0 40px; max-width: 34em; }
+  h2 {
+    font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.08em;
+    color: var(--muted); margin: 48px 0 16px; font-weight: 600;
+  }
+  .cards { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+  .card {
+    display: block; text-decoration: none; color: inherit;
+    border: 1px solid var(--rule); border-radius: 12px; padding: 22px 22px 20px;
+    border-top: 4px solid var(--accent); transition: transform .15s, box-shadow .15s;
+  }
+  .card:hover, .card:focus-visible { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(0,0,0,.08); }
+  .card .tag {
+    display: inline-block; font-size: 0.75rem; font-weight: 600; padding: 2px 10px;
+    border-radius: 999px; background: var(--accent-soft); color: var(--accent); margin-bottom: 10px;
+  }
+  .card h3 { margin: 0 0 6px; font-size: 1.25rem; }
+  .card p { margin: 0 0 14px; color: var(--muted); font-size: 0.97rem; }
+  .card .go { color: var(--accent); font-weight: 600; font-size: 0.95rem; }
+  .sig { --accent: var(--blue); --accent-soft: var(--blue-soft); }
+  .perio { --accent: var(--rose); --accent-soft: var(--rose-soft); }
+  .note {
+    margin-top: 48px; padding: 16px 20px; border-radius: 10px;
+    background: var(--amber-soft); border-left: 4px solid var(--amber); font-size: 0.97rem;
+  }
+  .note strong { color: var(--amber); }
+  .links { display: flex; flex-wrap: wrap; gap: 12px 24px; padding: 0; margin: 0; list-style: none; }
+  .links a { color: var(--blue); font-weight: 600; text-decoration: none; }
+  .links a:hover { text-decoration: underline; }
+  footer { max-width: 760px; margin: 0 auto; padding: 24px 20px 48px; color: var(--muted); font-size: 0.85rem; border-top: 1px solid var(--rule); }
+  @media (max-width: 520px) { main { padding-top: 48px; } h1 { font-size: 2rem; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>Elena Stamatelou</h1>
+  <p class="lede">PhD researcher in biomarker discovery and machine learning, working with omics data and building open tools for researchers.</p>
+
+  <h2>Projects</h2>
+  <div class="cards">
+    <a class="card sig" href="https://signatomics.elenastamatelou.com">
+      <span class="tag">Open-source software</span>
+      <h3>signatomics</h3>
+      <p>Python tools for finding biomarker signatures in omics data, starting with Olink (PEA) proteomics.</p>
+      <span class="go">Visit signatomics →</span>
+    </a>
+    <a class="card perio" href="https://elenastamatelou.github.io/perio-screening-questionnaire-based-tool/">
+      <span class="tag">Prototype</span>
+      <h3>Periodontitis screening</h3>
+      <p>A two-minute questionnaire that estimates the risk of severe periodontitis, for healthcare professionals.</p>
+      <span class="go">Open the questionnaire →</span>
+    </a>
+  </div>
+
+  <h2>Find me</h2>
+  <ul class="links">
+    <li><a href="https://www.linkedin.com/in/elenistamatelou/">LinkedIn</a></li>
+    <li><a href="https://github.com/ElenaStamatelou">GitHub</a></li>
+  </ul>
+
+  <div class="note">
+    <strong>Coming soon.</strong> This is a first, simple version of my website. The full website, with learning material and a blog, will replace it here.
+  </div>
+</main>
+<footer>© 2026 Elena Stamatelou</footer>
+</body>
+</html>
