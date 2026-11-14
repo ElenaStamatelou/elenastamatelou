@@ -15,7 +15,7 @@ Temporary one-page site (November 2026). It will be replaced by the final websit
 - GitHub: https://github.com/ElenaStamatelou
 
 ## Put it online (GitHub Pages, same as signatomics)
-1. Create a public repo on GitHub, e.g. `ElenaStamatelou/elenastamatelou.com`, and push these files.
+1. Create a public repo on GitHub, e.g. `ElenaStamatelou/elenastamatelou`, and push these files.
 2. Repo → Settings → Pages → Source: "Deploy from a branch", branch `main`, folder `/ (root)`.
 3. In Cloudflare (DNS for elenastamatelou.com lives there), add, with proxy status **DNS only** (grey cloud):
    - four `A` records, name `@` → 185.199.108.153, 185.199.109.153, 185.199.110.153, 185.199.111.153
